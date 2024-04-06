@@ -1,0 +1,120 @@
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10% 0px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 100px;
+}
+
+.text {
+  color: #323232;
+  
+  font-size: 32px;
+  font-weight: 600;
+}
+
+
+//----- spiner -----
+$Size1: 15px;
+$Size2: -30px;
+$Size3: 30px;
+
+.spiner {
+  height: $Size1;
+  width: $Size1;
+  color: #323232;
+  box-shadow: $Size2 $Size2 0 $Size1,
+              $Size2 $Size2 0 $Size1,
+              $Size2 $Size2 0 $Size1,
+              $Size2 $Size2 0 $Size1;
+  animation: spiner-38 8s infinite;
+}
+
+@keyframes spiner-38 {
+  0% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size2 $Size2 0 $Size1,
+                $Size2 $Size2 0 $Size1,
+                $Size2 $Size2 0 $Size1;
+  }
+  8.33% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1;
+  }
+  16.66% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size3 $Size3 0 $Size1;
+  }
+  24.99% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1;
+  }
+  33.32% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size2 $Size2 0 $Size1;
+  }
+  41.65% {
+    box-shadow: $Size3 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size3 $Size2 0 $Size1;
+  }
+  49.98% {
+    box-shadow: $Size3 $Size3 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size3 $Size3 0 $Size1;
+  }
+  58.31% {
+    box-shadow: $Size2 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1;
+  }
+  66.64% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size2 $Size2 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1;
+  }
+  74.97% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size3 $Size2 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1;
+  }
+  83.3% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size3 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1;
+  }
+  91.63% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size2 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1,
+                $Size2 $Size3 0 $Size1;
+  }
+  100% {
+    box-shadow: $Size2 $Size2 0 $Size1,
+                $Size2 $Size2 0 $Size1,
+                $Size2 $Size2 0 $Size1,
+                $Size2 $Size2 0 $Size1;
+  }
+}
+

@@ -1,0 +1,4 @@
+small 5x5 19x19
+middle 20x20 39x39
+big 40x40 59x59
+huge 60x60

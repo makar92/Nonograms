@@ -1,0 +1,13 @@
+.header {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+.account {
+  display: flex;
+  column-gap: 20px;
+}

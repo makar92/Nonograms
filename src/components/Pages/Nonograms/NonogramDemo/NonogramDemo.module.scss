@@ -1,0 +1,172 @@
+@mixin hidden($content) {
+  position: relative;
+  visibility: hidden;
+  &::before {
+  visibility: visible;
+    content: $content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #cacf9086;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.delete {
+  @include hidden("Nonogramm deleted!!");
+}
+
+.deleting {
+  @include hidden("DELETING!!!");
+}
+
+.nonogram {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  background: #bdc76486;
+}
+
+.name {
+  width: 100%;
+
+  color: #000000;
+  cursor: pointer;
+  
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #902323;
+  color: #ffffff;
+  font-size: 16px;
+
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    &:hover {
+      background: #2424a1;
+    }
+  }
+
+  &:active {
+    background: #3c4f04;
+  }
+}
+
+.body {
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #e2e4cc86;
+}
+
+.info {
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  color: #4e4e4e;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  &__item {}
+
+  & .weight {
+    font-weight: 600;
+    color: #000000;
+  }
+}
+
+.field {
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+
+  display: inline-grid;
+  grid-template-areas: "a b" "c d";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+
+  background-color: #ffffff86;
+  transition: background-color 0.3s ease 0s;
+  cursor: pointer;
+  border: 1px solid #000;
+
+  &:hover {
+    background-color: #d7d7d786;
+  }
+}
+
+.topBlock {
+  grid-area: b;
+
+  display: flex;
+  
+  &__column {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+}
+
+.leftBlock {
+  grid-area: c;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+
+.area {
+  grid-area: d;
+  
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffffb0;
+  border: 1px solid #000;
+}
+
+.string {
+  display: flex;
+}
+
+

@@ -1,0 +1,50 @@
+.nonogram {
+  height: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-areas: "a b" "c d";
+  justify-content: start;
+  align-content: start;
+  gap: 5px;
+}
+
+.topBlock {
+  grid-area: b;
+  min-height: 100px;
+
+  display: flex;
+
+  background: #c5616191;
+  
+  &__column {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+}
+
+.leftBlock {
+  grid-area: c;
+  min-width: 100px;
+
+  background: #c5616191;
+
+  &__row {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.area {
+  grid-area: d;
+
+  display: flex;
+  flex-direction: column;
+  
+  background: #6c60c7b0;
+}
+
+.string {
+  display: flex;
+}

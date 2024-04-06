@@ -1,0 +1,17 @@
+.creatorNonogram {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.cells {
+  margin: 30px 0 30px 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.row {
+  display: inline-flex;
+}
+
+

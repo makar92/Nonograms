@@ -1,0 +1,41 @@
+.cell {
+  width: 20px;
+  height: 20px;
+  
+  border: 1px solid #cacaca;
+
+  &_black {
+    background-color: #000000;
+    border: 1px solid #4e4e4e;
+  }
+
+  &_white {
+    background-color: #fff;
+  }
+
+  &_cross {
+    position: relative;
+
+    background-color: #fff;
+
+    &::before{
+      position: absolute;
+      top: calc(50% - 2px);
+      left: calc(50% - 2px);
+      content: "";
+      width: 4px;
+      height: 4px;
+
+      border-radius: 50%;
+      background-color: #361f1f;
+    }
+  }
+
+  &_multipleFiveWidth {
+    border-right: 2px solid #000000;
+  }
+
+  &_multipleFiveHeght {
+    border-bottom: 2px solid #000000;
+  }
+}

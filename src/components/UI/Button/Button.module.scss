@@ -1,0 +1,23 @@
+.button {
+  padding: 5px 30px;
+
+  display: inline-block;
+
+  border-radius: 5px;
+  background-color: #568fa8;
+  color: #ffffff;
+  transition: background-color 0.3s ease 0s;
+
+  font-size: 20px;
+  font-weight: 600;
+  
+  @media (min-width: 768px) {
+    &:hover {
+      background-color: #c77171;
+    }
+  }
+  
+  &:active {
+    background-color: #714b4b;
+  }
+}

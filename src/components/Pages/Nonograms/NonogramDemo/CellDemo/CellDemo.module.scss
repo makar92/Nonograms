@@ -1,0 +1,20 @@
+.cell {
+  background: transparent;
+  border: 1px solid #bebebe;
+
+  &_white {
+    background: #ffffff;
+  }
+
+  &_black {
+    background: #000000;
+  }
+
+  &_multipleFiveWidth {
+    border-right: 1.5px solid #000000;
+  }
+  
+  &_multipleFiveHeght {
+    border-bottom: 1.5px solid #000000;
+  }
+}

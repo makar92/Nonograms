@@ -1,0 +1,40 @@
+.navbar {
+  padding: 10px 20px;
+  width: 100%;
+  
+  background: #9bc3cb;
+}
+
+.list {
+  display: flex;
+  column-gap: 10px;
+
+  & li {
+    & a {
+      padding: 10px 20px;
+
+      display: block;
+
+      background: #5b80b3;
+      transition: all 0.3s ease 0s;
+      color: #dfecef;
+      border-radius: 10px;
+
+      font-size: 20px;
+      font-weight: 600;
+
+      @media (min-width: 768px) {
+        &:hover {
+          background: #dfecef;
+          color: #5b80b3;
+        }
+      }
+
+      &:active {
+        transition: all 0.1s ease 0s;
+        background: #48957c;
+        color: #cbd2dc;
+      }
+    }
+  }
+}
